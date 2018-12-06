@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JogosDeGuerra"
         mc:Ignorable="d"
-        Title="TelaDeGuerra" Height="300" Width="300">
+        Title="TelaDeGuerra" Height="300" Width="422.95">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -14,6 +14,7 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
+            <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -28,9 +29,10 @@
         <Button x:Name="ButtonCriarArqueiro" Click="ButtonCriarArqueiro_Click" Grid.Row="2" Grid.Column="0">Criar Arqueiro</Button>
         <Button x:Name="ButtonCriarGuerreiro" Click="ButtonCriarGuerreiro_Click" Grid.Row="2" Grid.Column="1">Criar Guerreiro</Button>
         <Button x:Name="ButtonCriarCavalaria" Click="ButtonCriarCavalaria_Click" Grid.Row="2" Grid.Column="2">Criar Cavalaria</Button>
+        <Button x:Name="ButtonCriarMago" Click="ButtonCriarMago_Click" Grid.Row="2" Grid.Column="3">Criar Mago</Button>
         <Button x:Name="ButtonDesfazer" Click="ButtonDesfazer_Click" Grid.Row="2" 
-                Grid.Column="3">Desfazer</Button>
+                Grid.Column="4">Desfazer</Button>
         <Button x:Name="ButtonRefazer" Click="ButtonRefazer_Click" Grid.Row="2" 
-                Grid.Column="4">Refazer</Button>
+                Grid.Column="5">Refazer</Button>
     </Grid>
 </Window>

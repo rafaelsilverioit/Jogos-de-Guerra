@@ -31,10 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -51,19 +51,29 @@
   <ItemGroup>
     <Compile Include="AbstractFactoryExercito.cs" />
     <Compile Include="Arqueiro.cs" />
+    <Compile Include="MagoPersa.cs" />
+    <Compile Include="MagoIndiano.cs" />
+    <Compile Include="MagoEgipicio.cs" />
+    <Compile Include="MagoFenicio.cs" />
+    <Compile Include="ArqueiroFenicio .cs" />
     <Compile Include="ArqueiroEgipicio.cs" />
     <Compile Include="ArqueiroIndiano.cs" />
     <Compile Include="ArqueiroPersa.cs" />
     <Compile Include="Batalha.cs" />
+    <Compile Include="Mago.cs" />
     <Compile Include="Cavaleiro.cs" />
-    <Compile Include="CavaleiroEgipicia.cs" />
+    <Compile Include="CavaleiroFenicio.cs" />
+    <Compile Include="CavaleiroEgipicio.cs" />
     <Compile Include="CavaleiroIndiana.cs" />
     <Compile Include="CavaleiroPersa.cs" />
     <Compile Include="ElementoDoExercito.cs" />
     <Compile Include="Exercito.cs" />
+    <Compile Include="FactoryExercitoEgipicio.cs" />
+    <Compile Include="FactoryExercitoFenicio.cs" />
     <Compile Include="FactoryExercitoIndiano.cs" />
     <Compile Include="FactoryExercitoPersa.cs" />
     <Compile Include="Guerreiro.cs" />
+    <Compile Include="GuerreiroFenicio.cs" />
     <Compile Include="GuerreiroEgipicio.cs" />
     <Compile Include="GuerreiroIndiano.cs" />
     <Compile Include="GuerreiroPersa.cs" />

@@ -76,6 +76,15 @@ namespace JogosDeGuerra
             this.NotifyPropertyChanged("Elementos");
         }
 
+        private void ButtonCriarMago_Click(object sender, RoutedEventArgs e)
+        {
+            Command cmd = new CommandCriarMago(
+                this.FactoryExercito,
+                this.Elementos);
+            this.CommandManager.Execute(cmd);
+            this.NotifyPropertyChanged("Elementos");
+        }
+
         private void ButtonDesfazer_Click(object sender, RoutedEventArgs e)
         {
             CommandManager.Undo();

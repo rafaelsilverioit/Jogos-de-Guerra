@@ -11,6 +11,7 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Button Click="BtnEscolherExercito_Click"  
                 Grid.Row="0" x:Name="BtnIndia">India</Button>
@@ -19,5 +20,8 @@
         <Button Click="BtnEscolherExercito_Click" 
                 Grid.Row="2" Content="Egito" 
                 x:Name="BtnEgito"/>
+        <Button Click="BtnEscolherExercito_Click" 
+                Grid.Row="3" Content="Fenicia" 
+                x:Name="BtnFenicia"/>
     </Grid>
 </Window>

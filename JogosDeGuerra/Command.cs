@@ -68,4 +68,32 @@ namespace JogosDeGuerra
             Elementos.Remove(this.Elemento);
         }
     }
+
+    public class CommandCriarMago
+        : Command
+    {
+        AbstractFactoryExercito Factory { get; set; }
+
+        List<ElementoDoExercito> Elementos { get; set; }
+        public ElementoDoExercito Elemento { get; set; }
+
+        public CommandCriarMago(
+            AbstractFactoryExercito factory,
+            List<ElementoDoExercito> elementos)
+        {
+            this.Elementos = elementos;
+            this.Factory = factory;
+        }
+
+        public void Execute()
+        {
+            this.Elemento = Factory.CriarMago();
+            Elementos.Add(this.Elemento);
+        }
+
+        public void Undo()
+        {
+            Elementos.Remove(this.Elemento);
+        }
+    }
 }

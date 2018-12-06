@@ -22,5 +22,10 @@ namespace JogosDeGuerraModel
         {
             return new GuerreiroIndiano();
         }
+
+        public override Mago CriarMago()
+        {
+            return new MagoIndiano();
+        }
     }
 }
